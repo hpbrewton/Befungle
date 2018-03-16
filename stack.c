@@ -79,6 +79,7 @@ fungePush (bstack *stack, int val) {
     }
 }
 
+/* for testing
 int
 main (int argc, char *argv[]) {
     bstack *stack = init();
@@ -88,3 +89,4 @@ main (int argc, char *argv[]) {
         printf("%d\n", pop(stack));
     freeStack(stack);
 }
+*/
