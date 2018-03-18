@@ -30,8 +30,9 @@ struct point torus_east(int w, int h, struct point p) {
     return q;
 }
 
-// TODO: Calculates the point p reflected over the midpoint of 0..l
+// TODO: Calculates the point p reflected over the midpoint of 1..l
 int flip(int p, int l) {
+    int m = l/2;
     return 0;
 }
 

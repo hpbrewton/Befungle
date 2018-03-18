@@ -7,6 +7,9 @@ typedef struct point {
 
 // Each topography expects that it will be represented by an underlying 2d grid
 // i.e. a direction is just a function width, height, point -> point
+// in the ideal world this would be curried so one could do
+// topolgy t = TORUS(4,4);
+// p = (*t.north)((point){0,0});
 typedef struct topology {
     point (*north)(int, int, point);
     point (*west)(int, int, point);
